@@ -2321,11 +2321,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a842225\\source\\repos\\CodeFirst-APIRest\\APIAsync\\Commander\\Commander.csproj",
+      "projectUniqueName": "C:\\Users\\a842225\\source\\repos\\CodeFirst-APIRest\\APIAsync\\APIRestAsync\\Commander\\Commander.csproj",
       "projectName": "Commander",
-      "projectPath": "C:\\Users\\a842225\\source\\repos\\CodeFirst-APIRest\\APIAsync\\Commander\\Commander.csproj",
+      "projectPath": "C:\\Users\\a842225\\source\\repos\\CodeFirst-APIRest\\APIAsync\\APIRestAsync\\Commander\\Commander.csproj",
       "packagesPath": "C:\\Users\\a842225\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a842225\\source\\repos\\CodeFirst-APIRest\\APIAsync\\Commander\\obj\\",
+      "outputPath": "C:\\Users\\a842225\\source\\repos\\CodeFirst-APIRest\\APIAsync\\APIRestAsync\\Commander\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

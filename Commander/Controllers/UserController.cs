@@ -35,5 +35,6 @@ namespace Commander.Controllers
             User? userDto = await _repository.GetUserById(id);
             return userDto != null ? Ok(userDto) : NotFound();
         }
+        
     }
 }

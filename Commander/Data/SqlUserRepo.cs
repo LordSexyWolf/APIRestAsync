@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using UserModel.Models;
 
 namespace Commander.Data
@@ -33,16 +34,6 @@ namespace Commander.Data
             _context.User.Remove(cmd);
         }
 
-        public IEnumerable<User> GetUsers()
-        {
-            return _context.User.ToList();
-        }
-
-        public User GetUserById(int id)
-        {
-            return _context.User.FirstOrDefault(p => p.Id == id);
-        }
-
         public bool SaveChanges()
         {
             return (_context.SaveChanges() >= 0);
@@ -53,14 +44,14 @@ namespace Commander.Data
             //Nothing
         }
 
-        Task<List<User>> IUserRepo.GetUsers()
+        public async Task<List<User>> GetUsers()
         {
-            throw new NotImplementedException();
+            return await _context.User.ToListAsync();
         }
 
-        Task<User?> IUserRepo.GetUserById(int id)
+        public async Task<User?> GetUserById(int id)
         {
-            throw new NotImplementedException();
+             return await _context.User.FindAsync(id);
         }
     }
 }
