@@ -1,0 +1,37 @@
+[1:07 PM] Salinas, Joshua
+dotnet tool install --global dotnet ef
+
+[1:11 PM] Salinas, Joshua
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+[1:12 PM] Salinas, Joshua
+dotnet add package Microsoft.EntityFrameworkCore
+
+[1:12 PM] Salinas, Joshua
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+[1:12 PM] Salinas, Joshua
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+[1:12 PM] Salinas, Joshua
+dotnet tool install --global dotnet ef
+
+[1:13 PM] Salinas, Joshua
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+
+[1:13 PM] Salinas, Joshua
+dotnet add package Microsoft.AspNetCore.JsonPatch
+
+[1:13 PM] Salinas, Joshua
+dotnet add package Swashbuckle.AspNetCore
+
+[1:14 PM] Salinas, Joshua
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+
+dotnetdotnet tool install --global dotnet-ef
+dotnet --version
+dotnet run
+
+dotnet ef migrations add [migrationName]
+dotnet ef database update 
