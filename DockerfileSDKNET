@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1
+FROM mcr.microsoft.com/dotnet/sdk:6.0 
+WORKDIR /app
+EXPOSE 5000
+EXPOSE 5001
+
+# Copy csproj and restore as distinct layers
+COPY /Commander/Commander.csproj ./
+##COPY /CommanderTest/CommanderTest.csproj ./
+
+RUN dotnet restore ./Commander.csproj
+##RUN dotnet restore ./CommanderTest.csproj
+
+# Copy everything else and build
+COPY /Commander .
